@@ -1,0 +1,1 @@
+../../../Baidu-Maps-iOS-SDK/inc/BMKMapComponent.h
