@@ -1,0 +1,43 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+#import "macrodefine.h"
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "MSUIViewExt.h"
+#import "MSNSArrayExt.h"
+#import "MSNSDictionaryExt.h"
+#import "NSObject+MSTools.h"
+#endif
+
+// appstore      App Store
+//快用苹果手机助手  kuaiyong
+//xy苹果助手       xy
+//百度91          91
+//同步推	         tongbu
+//搞趣	         gao7
+//pp助手		     pp
+
+#define APPCHANNEL    @"App Store"//channel
+
+#define KEY_WINDOW  [[UIApplication sharedApplication] keyWindow]
+
+
+//scheme url
+#define APPURL                      @"itms-apps://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=917930451"
+#define APPSTOREID                  917930451
+#define APPSTOREURL                 @"https://itunes.apple.com/us/app/lan-ren-zhou-mo/id917930451?mt=8"
+
+#define UMTRACKKEY                  @"10880d5291bad83a45b8f2506e33946d"

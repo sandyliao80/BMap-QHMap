@@ -31,3 +31,9 @@
 #define CAVerson 1.0.0
 #define CAWayCount (INT_MAX)
 
+#define titleLableColor             [UIColor colorWithRed:67.0f/255.0f green:73.0f/255.0f blue:82.0f/255.0f alpha:1]
+
+#define subTitleLableColor          [UIColor colorWithRed:122.0f/255.0f green:128.0f/255.0f blue:137.0f/255.0f alpha:1]
+
+#define splitlineGray               colorWithRed:197/255.0f green:197/255.0f blue:197/255.0f alpha:1
+

@@ -7,16 +7,28 @@
 //
 
 #import "AppDelegate.h"
+#import "HomeViewController.h"
 
-@interface AppDelegate ()
-
+//每个应用的key都是不一样的 请到百度地图官网申请
+#define BMAPKEY @"o89oDuYEHp2Wde3RwhpLyjhk"
+@interface AppDelegate ()<BMKGeneralDelegate>
+@property(strong,nonatomic)BMKMapManager *bmkMapManager;
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    UINavigationController*nav=[[UINavigationController alloc] initWithRootViewController:[HomeViewController new]];
+    self.window.rootViewController=nav;
+    [self.window makeKeyAndVisible];
+    
+
+     NSString*bundleIdentifier = [[NSBundle mainBundle] bundleIdentifier];//申请key的时候会用到这个string
+    self.bmkMapManager=[[BMKMapManager alloc] init];
+    [self.bmkMapManager start:BMAPKEY generalDelegate:self];
+
     return YES;
 }
 
