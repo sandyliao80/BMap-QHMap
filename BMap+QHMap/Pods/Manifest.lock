@@ -1,0 +1,10 @@
+PODS:
+  - Baidu-Maps-iOS-SDK (2.5.0.1)
+
+DEPENDENCIES:
+  - Baidu-Maps-iOS-SDK
+
+SPEC CHECKSUMS:
+  Baidu-Maps-iOS-SDK: f77c0069d0486513cffc3a3cfcca069bb43088aa
+
+COCOAPODS: 0.34.4

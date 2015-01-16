@@ -1,0 +1,4 @@
+PODS_BAIDU_MAPS_IOS_SDK_LIBRARY_SEARCH_PATHS = $(PODS_ROOT)/Baidu-Maps-iOS-SDK
+PODS_BAIDU_MAPS_IOS_SDK_ONLY_ACTIVE_ARCH = NO
+PODS_BAIDU_MAPS_IOS_SDK_OTHER_LDFLAGS = -l"BaiduMapApi" -l"stdc++" -framework "CoreGraphics" -framework "CoreLocation" -framework "OpenGLES" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration"
+PODS_BAIDU_MAPS_IOS_SDK_VALID_ARCHS = armv7 armv7s armv64
